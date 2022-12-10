@@ -27,59 +27,12 @@ a{
     right: 0;
     left: 0;
 }
-.grid-container{
+.grid-container {
     max-width: 900px;
     margin: auto;
-}
-header{
-    width: 100%;
-    height: 140px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-header .header-icons-container {
-    width: 100%;
-    height: 50px;
-    display: grid;
-    background-color: #2b2d42;
-}
-header .header-icons-container .icons{
-    width: 300px;
-    height: auto;
-    display: flex;
-    justify-items: flex-end;
-    align-items: center;
-    justify-content: space-between;
-    justify-self: end;
-    margin-right: 50px;
-}
-header .icons span{
-    color: #edf2f4;
-}
-nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 90px;
-    background-color: #edf2f4;
-}
-nav .nav-logo-container{
-    margin-left: 50px;
-}
-nav .nav-logo-container img {
-    width: 220px;
-    margin-top: 10px;
-}
-nav .profile-link{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-right: 50px;
-}
-nav .profile-link a{
+    }
 
-    color: black;
-    border-bottom: 1px solid black;
-}
+
 .home-main{
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
@@ -167,16 +120,24 @@ nav .profile-link a{
     width: 100%;
 }
 footer{
-    width: 100%;
-    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: #2b2d42;
-    border-top: 35px solid #2b2d42;
-    text-align: center;
+    margin: 5px;
+    padding: 25px 50px;
+    padding-top: 15px;
+    margin-top: 200px;
 }
-footer p{
+footer p {
+    font-size: 1.2em;
     color: #edf2f4;
-    margin-top: 30px;
 }
+footer a {
+    text-decoration: none;
+    color: #edf2f4;
+}
+
 .blogpost-img-container img{
     padding: 0 50px 40px;
 }
@@ -219,4 +180,38 @@ footer p{
 .contact-main-container img {
     width: 100px;
 
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+    
+ }
+ .logo{
+    width: 80px;
+ }
+
+#logo_link{
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.header-principal {
+    width: 100%;
+    background-color:#2b2d42;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+nav {
+    
+display: flex;
+justify-content: space-around;
+}
+nav a {
+    color: #edf2f4;
+    text-decoration: none;
+    align-self: center;
+    padding: 15px 30px;
 }
